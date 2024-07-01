@@ -11,12 +11,6 @@ To have vagrant up and running in your computer you can use the link below:
 https://developer.hashicorp.com/vagrant/install
 ```
 
-## How to install vmware
-Once you have vagrant installed you can use the command below to install vmware.
-```bash
-vagrant plugin install vagrant-vmware-desktop
-```
-
 ## Initializing a project directory.
 The first step to configure any vagrant project is to first of all create a ```Vagrantfile```. This file allows you to do the following:
 - Mark the root directory of your project since many configuration options in vagrant are relative to the root directory.

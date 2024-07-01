@@ -69,3 +69,22 @@ vagrant up # this command launches our vm and make it running.
 ```
 
 ## SSH into the machine.
+```bash
+vagrant ssh
+```
+
+## Destroy machine
+```bash
+vagrant destroy
+```
+
+## Remove the box
+The ```vagrant destroy``` command does not remove downloaded boxes. So see the boxes that exist use the command below:
+```bash
+vagrant box list
+```
+
+Remove the box:
+```bash
+vagrant box remove box_name
+```

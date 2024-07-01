@@ -1,10 +1,20 @@
 # Getting started with Vagrant 
 Vagrant is a tool for building and managing virtual development environments. It is primary used for creating and configuring lightweight, reproducible, and portable virtual machine environments. In this guide we are going to cover the basics of vagrant.
 
+## Prerequisites
+- Install latest version of [vagrant](https://developer.hashicorp.com/vagrant/install)
+- Install a virtualization product or Hypervisor such as (VirtualBox, VMware or Hyper-V).
+
 ## How to install vagrant 
 To have vagrant up and running in your computer you can use the link below:
 ```bash
 https://developer.hashicorp.com/vagrant/install
+```
+
+## How to install vmware
+Once you have vagrant installed you can use the command below to install vmware.
+```bash
+vagrant plugin install vagrant-vmware-desktop
 ```
 
 ## Initializing a project directory.
@@ -54,3 +64,14 @@ end
 ```
 
 [Find more boxes here](https://app.vagrantup.com/boxes/search)
+
+# Start your environment.
+Now that our project has been initialized and configured to use the ```bionic64 box```, it is time to boot our first vagrant environment.
+
+## Bring up your virtual environment.
+Run the following command:
+```bash
+vagrant up # this command launches our vm and make it running.
+```
+
+## SSH into the machine.
